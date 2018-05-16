@@ -1,19 +1,20 @@
 <?php
 session_start();
 setcookie("ccheck","good");
+
+//change the following directory to somewhere outside the root directory
+include "config/config.php";
+include "includes/ldb.php";
+
 if(isset($_COOKIE['mbusername']) && isset($_COOKIE['mbrh']) && empty($_SESSION['username']))
 {
   $una = cleanvars($_COOKIE['mbusername']);
-  //change the following directory to somewhere outside the root directory
-  include "config/config.php";
-  include "includes/ldb.php";
-  $findhash = mysql_query("SELECT autohash FROM user_data WHERE username = '$una'");
-  $hashr = mysql_fetch_row($findhash);
+  $findhash = mysqli_query($mc, "SELECT autohash FROM user_data WHERE username = '$una'");
+  $hashr = mysqli_fetch_row($findhash);
   if($hashr[0] == $_COOKIE['mbrh'])
   {
     $_SESSION['username'] = cleanvars($_COOKIE['mbusername']);
   }
-  include "includes/cdb.php";
 }
 if($_GET['p'] != "signin" && $_GET['p'] != "register" && $_GET['p'] != "save" && $_GET['p'] != "sitelist" && $_GET['p'] != "")
 {
@@ -102,6 +103,8 @@ else{
 <br />
 <?php
 #print_r($_SESSION);
+
+  include "includes/cdb.php";
 ?>
 </body>
 </html>

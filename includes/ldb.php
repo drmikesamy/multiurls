@@ -1,4 +1,9 @@
 <?php
-$mc = mysql_connect($dbh, $dbun, $dbpw) or die("Error: Cannot connect to database!");
-mysql_select_db($dbn);
+$mc = mysqli_connect($dbh, $dbun, $dbpw, $dbn);
+
+/*check connection*/
+if (mysqli_connect_errno()) {
+  printf("connection failed: %s\n", mysqli_connect_error());
+  exit();
+}
 ?>
