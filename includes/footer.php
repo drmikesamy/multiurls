@@ -1,0 +1,1 @@
+<a href="index.php?p=contact">Contact</a> | <a href="index.php?p=tc">Disclaimer</a> | Copyright &copy; 2007 Michael Samy. All Rights Reserved.

@@ -1,0 +1,1 @@
+Welcome, <?php echo $_SESSION['username']; ?> | <a href="signout.php">Sign out</a>

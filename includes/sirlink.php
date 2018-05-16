@@ -1,0 +1,1 @@
+<a href="index.php?p=signin">Sign in</a> | <a href="index.php?p=register">Register</a>

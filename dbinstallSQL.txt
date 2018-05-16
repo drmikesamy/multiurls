@@ -1,0 +1,55 @@
+CREATE DATABASE multiurls2;
+
+USE multiurls2;
+
+CREATE TABLE user_data
+(
+userid int unsigned not null auto_increment primary key,
+username varchar(25),
+password varchar(35),
+eaddress varchar(65),
+autohash varchar(35)
+);
+
+CREATE TABLE user_URLs
+(
+id int unsigned not null auto_increment primary key,
+author varchar(25),
+type text,
+xpos int,
+ypos int,
+width int,
+height int,
+content text,
+tstamp datetime
+);
+
+CREATE TABLE sharing
+(
+sid int unsigned not null auto_increment primary key,
+userto varchar(25),
+userfrom varchar(25),
+subject text,
+comments text,
+nou text,
+url0 text,
+url1 text,
+url2 text,
+url3 text,
+url4 text,
+url5 text,
+url6 text,
+url7 text,
+url8 text,
+url9 text,
+url10 text,
+url11 text,
+url12 text,
+url13 text,
+url14 text,
+collapse text,
+private text,
+tstamp datetime
+);
+
+finally, create a folder ../../d/ relative to this directory, and 
