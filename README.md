@@ -16,7 +16,7 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 ## Author
 
-* **Dr. Michael M. Samy** mike@composedhealth.com
+* **Dr. Michael M. Samy** [mike@composedhealth.com]
 
 ## License
 
