@@ -4,7 +4,7 @@ This is a PHP project I created to practice my programming skills. It is a bookm
 
 ## Getting Started
 
-This project runs on a LAMP stack. The folder named 'config' goes outside the root directory as it contains the MySQL database login details. The file named dbinstallSQL.txt contains the SQL to recreate the database locally.
+This project runs on a LAMP stack. The folder named 'config' goes outside the root directory as it contains the MySQL database login details - when you move it make sure you change the reference in index.php. The file named dbinstallSQL.txt contains the SQL to recreate the database locally.
 
 ### Prerequisites
 
