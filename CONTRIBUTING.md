@@ -1,6 +1,6 @@
 This is an experimental project that is still in development.
 
-##Code of conduct
+## Code of conduct
 
 Please email me beforehand to discuss changes you would like to make. My email address is in the [README.md](README.md) file.
 
