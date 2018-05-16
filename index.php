@@ -42,7 +42,7 @@ if($_GET['cookies'] == "d")
 {
 $ckcheck = "false";
 }else{
-echo "<meta http-equiv=\"refresh\" content=\"0;URL=http://www.peerdiary.com?cookies=d\"";
+echo "<meta http-equiv=\"refresh\" content=\"0;URL=$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]?cookies=d\"";
 }
 }
 ?>
